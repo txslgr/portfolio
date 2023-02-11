@@ -7,6 +7,7 @@ module.exports = {
         "Montserrat",
         "Helvetica Neue",
         "Arial",
+				"Noto Sans JP",
         "Hiragino Kaku Gothic ProN",
         "Hiragino Sans",
         "Meiryo",
