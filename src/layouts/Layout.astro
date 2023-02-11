@@ -26,23 +26,25 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="font-sans text-base text-slate-700 tracking-wider">
-    <header class="fixed shadow w-full">
-      <div class="flex justify-between items-center px-10 py-5">
-        <h1 class="font-bold leading-5 mr-4 text-xl">
-          <a href=".">DAISUKE YUMA</a>
-        </h1>
-        <nav>
-          <ul class="flex gap-4 justify-between list-none text-sm">
-            <li class="gnav-item"><a href="#a">プロフィール</a></li>
-            <li class="gnav-item"><a href="#b">スキル</a></li>
-            <li class="gnav-item"><a href="#c">経歴</a></li>
-            <li class="gnav-item"><a href="#d">プロダクト</a></li>
-            <li class="gnav-item"><a href="#e">その他</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <slot />
+		<div class="pt-16">
+			<header class="bg-white fixed shadow top-0 w-full z-10">
+				<div class="flex justify-between items-center px-10 py-5">
+					<h1 class="font-bold leading-5 mr-4 text-xl">
+						<a href=".">DAISUKE YUMA</a>
+					</h1>
+					<nav>
+						<ul class="flex gap-4 justify-between list-none text-sm">
+							<li class="gnav-item"><a href="#a">プロフィール</a></li>
+							<li class="gnav-item"><a href="#b">スキル</a></li>
+							<li class="gnav-item"><a href="#c">経歴</a></li>
+							<li class="gnav-item"><a href="#d">プロダクト</a></li>
+							<li class="gnav-item"><a href="#e">その他</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<slot />
+		</div>
   </body>
 </html>
 <!-- <style is:global></style> -->
