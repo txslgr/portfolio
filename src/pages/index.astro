@@ -1,12 +1,26 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		portfolio
-	</main>
+  <main>
+    <div
+      class="flex h-[85vh] md:h-[75vh] items-center justify-center px-5 text-center"
+    >
+      <div>
+        <p class="font-bold mb-1 text-3xl md:text-6xl tracking-widest">
+          DAISUKE YUMA
+        </p>
+        <p class="font-bold mb-5 md:mb-10 text-base md:text-xl">PORTFOLIO</p>
+        <p class="leading-7 text-[14px] md:text-[16px]">
+          ユーザーとお客様が心から満足できる<br
+            class="md:hidden"
+          />サイトをお作りいたします。<br />
+          デザインとコーディングは<br class="md:hidden" />おまかせください。
+        </p>
+      </div>
+    </div>
+  </main>
 </Layout>
 
 <style></style>
