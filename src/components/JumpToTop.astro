@@ -1,8 +1,18 @@
 ---
 ---
 
-<div class="bg-neutral-600 cursor-pointer leading-6 p-2 text-center">
+<div
+  class="bg-neutral-600 cursor-pointer leading-6 p-2 text-center"
+  id="jumpToTop"
+>
   <span class="align-middle text-white material-icons text-[24px]"
     >expand_less</span
   >
 </div>
+<script>
+  document.getElementById("jumpToTop")?.addEventListener("click", () => {
+    document.getElementById("pageTop")?.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+</script>

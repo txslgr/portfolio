@@ -35,11 +35,11 @@ import Footer from "../components/Footer.astro";
     <title>{title}</title>
   </head>
   <body class="font-sans text-base text-slate-700 tracking-wider">
-    <div class="pt-16">
+    <div class="pt-16" id="pageTop">
       <Header />
       <slot />
       <JumpToTop />
-			<Footer />
+      <Footer />
     </div>
   </body>
 </html>

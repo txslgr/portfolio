@@ -12,14 +12,26 @@
       <ul
         class="flex gap-4 items-center justify-between list-none text-xs md:text-sm"
       >
-        <li class="whitespace-nowrap"><a href="#products">プロダクト</a></li>
-        <li class="whitespace-nowrap"><a href="#skills">スキル</a></li>
-        <li class="whitespace-nowrap"><a href="#career">経歴</a></li>
         <li class="whitespace-nowrap">
-          <a href="#contact"
+          <a href="javascript:void(0)" id="navItem_0" data-target-id="products"
+            >プロダクト</a
+          >
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="javascript:void(0)" id="navItem_1" data-target-id="skills"
+            >スキル</a
+          >
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="javascript:void(0)" id="navItem_2" data-target-id="career"
+            >経歴</a
+          >
+        </li>
+        <li class="whitespace-nowrap">
+          <a href="javascript:void(0)" id="navItem_3"
             ><span
               class="align-middle material-icons text-[24px] md:text-[32px]"
-              >mail_outline</span
+              data-target-id="contact">mail_outline</span
             ></a
           >
         </li>
@@ -27,3 +39,17 @@
     </nav>
   </div>
 </header>
+<script>
+  const scroll = (elm: HTMLElement) => {
+    const id = elm.dataset.targetId || "";
+    const target = document.querySelector(`#${id}`);
+    target?.scrollIntoView({ behavior: "smooth" });
+  };
+  for (let i = 0, len = 4; i < len; i++) {
+    document
+      .querySelector(`#navItem_${i}`)
+      ?.addEventListener("click", (e: Event) => {
+        scroll(e.target as HTMLElement);
+      });
+  }
+</script>
