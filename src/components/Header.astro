@@ -40,11 +40,16 @@
   </div>
 </header>
 <script>
+  /**
+   * スクロール
+   * @param elm クリックされた要素
+   */
   const scroll = (elm: HTMLElement) => {
     const id = elm.dataset.targetId || "";
     const target = document.querySelector(`#${id}`);
     target?.scrollIntoView({ behavior: "smooth" });
   };
+  // クリック時のイベントリスナーを設定
   for (let i = 0, len = 4; i < len; i++) {
     document
       .querySelector(`#navItem_${i}`)
