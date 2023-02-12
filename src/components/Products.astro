@@ -22,15 +22,15 @@ const allProducts = await Astro.glob("../pages/products/*.md");
             }
           })
           .map((product) => (
-            <div>
+            <a class="block" href={product.url}>
               <img
                 src="https://placehold.jp/400x300.png"
                 alt=""
                 class="w-full"
               />
-              <p class="font-bold text-xs">{product.frontmatter.company}</p>
-              <p class="text-[10px]">{product.frontmatter.title}</p>
-            </div>
+              <p class="font-bold leading-4 mt-2 text-xs">{product.frontmatter.title}</p>
+              <p class="leading-4 mt-1 text-[10px]">{product.frontmatter.company}</p>
+            </a>
           ))
       }
     </div>
