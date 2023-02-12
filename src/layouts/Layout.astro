@@ -5,7 +5,7 @@ export interface Props {
 
 const { title } = Astro.props;
 
-import Header from '../components/Header.astro';
+import Header from "../components/Header.astro";
 ---
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@ import Header from '../components/Header.astro';
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-		<meta name="robots" content="noindex" />
+    <meta name="robots" content="noindex" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +23,10 @@ import Header from '../components/Header.astro';
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
     <meta name="generator" content={Astro.generator} />
